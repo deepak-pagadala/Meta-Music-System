@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import LoginForm from './Forms/LoginForm';
-import NewUserForm from './Forms/NewUserForm';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import LoginForm from "./Forms/LoginForm";
+import NewUserForm from "./Forms/NewUserForm";
 
 function App() {
   const [isNewUser, setIsNewUser] = useState(false);
+  const navigate = useNavigate();
 
   const handleNewUser = () => {
     setIsNewUser(true);
@@ -11,6 +13,11 @@ function App() {
 
   const handleExistingUser = () => {
     setIsNewUser(false);
+  };
+
+  const handleLogin = () => {
+    // Replace this with your actual login logic
+    navigate("/Dashboard");
   };
 
   return (
@@ -21,17 +28,14 @@ function App() {
             <>
               <NewUserForm />
               <div className="form-control mt-6">
-                <button
-                  className="btn btn-link"
-                  onClick={handleExistingUser}
-                >
+                <button className="btn btn-link" onClick={handleExistingUser}>
                   Existing User
                 </button>
               </div>
             </>
           ) : (
             <>
-              <LoginForm />
+              <LoginForm handleLogin={handleLogin} />
               <div className="form-control mt-6">
                 <button className="btn btn-link" onClick={handleNewUser}>
                   New User
