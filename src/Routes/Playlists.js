@@ -124,6 +124,7 @@ const Playlists = () => {
             Add To Playlist
           </button>
         </div>
+        <h2 className="text-xl font-bold mb-2">My Playlist</h2>
         <ul className="list-disc pl-4">
           {todos.map((todo, index) => (
             <li key={index}>{todo}</li>
