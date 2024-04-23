@@ -9,7 +9,7 @@ const Drawer = () => {
           alt="Profile"
           className="rounded-full mb-4"
         />
-        <h2 className="text-xl font-bold">John Doe</h2>
+        <h2 className="text-xl font-bold">Vedant</h2>
       </div>
       <nav className="mt-8">
         <ul>
