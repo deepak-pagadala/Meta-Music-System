@@ -8,7 +8,7 @@ const pool = new Pool({
     host: 'localhost',
     database: 'Metamusic',
     password: 'root',
-    port: 5432,
+    port: 5433,
   });
 
 exports.registerUser = async (req, res) => {

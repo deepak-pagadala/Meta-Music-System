@@ -16,9 +16,9 @@ const port = 3001;
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'Metamusic',
-  password: 'root',
-  port: 5432,
+  database: 'postgress_BeatBlend',
+  password: 'King@1397',
+  port: 5433,
 });
 
 module.exports = pool;
