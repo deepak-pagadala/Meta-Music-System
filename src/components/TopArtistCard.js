@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopArtistCard = ({ artist, totalLikes, totalStreams, combinedScore, imageLink }) => {
   const combinedScorePercentage = Math.round(combinedScore/1200000) ;
-
+  
   return (
     <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
       <img
