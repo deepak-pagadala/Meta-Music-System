@@ -59,6 +59,7 @@ const Dashboard = () => {
                 totalLikes={artist.total_likes}
                 totalStreams={artist.total_streams}
                 combinedScore={artist.combined_score}
+                imageLink={artistImageLinks[artist.artist]}
               />
             ))}
           </div>
