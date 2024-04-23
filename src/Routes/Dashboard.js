@@ -48,17 +48,12 @@ const Dashboard = () => {
   <h1 className="text-2xl font-bold mb-4 text-primary">Welcome to the ADT Project</h1>
 
   {/* Top Liked Songs Section */}
-  <div className="mb-8">
+  <div className="mb-20">
     <h2 className="text-xl font-bold mb-2">Top Liked Songs</h2>
     <TopLikedSongsTable likedSongs={likedSongs} />
   </div>
 
-  {/* Top Streamed Songs Section */}
-  <div className="mb-8">
-          <h2 className="text-xl font-bold mb-2">Top Streamed Songs</h2>
-          <TopStreamedSongsChart streamedSongs={streamedSongs} />
-  </div>
-
+  
   {/* Top Artists Section */}
   <div>
     <h2 className="text-xl font-bold mb-2">Top Artists</h2>
@@ -75,6 +70,12 @@ const Dashboard = () => {
             ))}
           </div>
   </div>
+  {/* Top Streamed Songs Section */}
+  <div className="mb-8 mt-20">
+          <h2 className="text-xl font-bold mb-2">Top Streamed Songs</h2>
+          <TopStreamedSongsChart streamedSongs={streamedSongs} />
+  </div>
+
 </div>
 
   </div>
