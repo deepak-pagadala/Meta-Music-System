@@ -63,7 +63,11 @@ const Playlists = () => {
         <Drawer />
       </div>
       <div className="flex-1 p-8">
+      <div className="flex justify-between mb-4">
+          <h1 className="text-2xl font-bold text-primary">Create Playlist</h1>
+        </div>
         <div className="mb-5">
+        <h2 className="text-xl font-bold mb-2">Search by Artist</h2>
           <label className="input input-bordered flex items-center gap-2">
             <input
               type="text"
@@ -86,11 +90,9 @@ const Playlists = () => {
             </svg>
           </label>
         </div>
-        <div className="flex justify-between mb-4">
-          <h1 className="text-2xl font-bold text-primary">Create Playlist</h1>
-        </div>
+        
         <div className="mb-8">
-          <h2 className="text-xl font-bold mb-2">Search by Artist</h2>
+          
           {searchResults.length > 0 ? (
             <ul className="list-disc pl-4">
               {searchResults.map((result, index) => (
@@ -110,6 +112,7 @@ const Playlists = () => {
           )}
         </div>
         <div className="mb-4">
+        <h2 className="text-xl font-bold mb-2">Search by Song</h2>
           <input
             type="text"
             placeholder="Add a new song"
