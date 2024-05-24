@@ -1,4 +1,4 @@
-# ADT-Project
+# Meta-Music-System(ADT-Project)
 Spring 2024 ADT Project
 
 ## Prerequisites
